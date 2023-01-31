@@ -23,8 +23,8 @@
                 <div class="topnav" id="myTopnav">
                     <a href="index.html" class="active">Välkommen</a>
                     <a href="boka.html">Boka</a>
-                    <a href="#">Hitta</a>
-                    <a href="#">Kontakta</a>
+                    <a href="hitta.html">Hitta</a>
+                    <a href="kontakta.html">Kontakta</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                       </a>
@@ -35,9 +35,38 @@
         <main>
             <form action="#">
                 <fieldset>
+                    <label>Förnman:
+                        <input type="text" name="förnamn" required>
+                    </label>
+
+                    <label>Efternamn:
+                        <input type="text" name="efternamn" required>
+                    </label>
+
+                    <label>Rumstyp:
+                        <select name="rumstyp" required>
+                            <option value="" disabled selected hidden>Välj typ av rum</option>
+                            <option value="stort_rum">Stort rum</option>
+                            <option value="litet_rum">Litet rum</option>
+                        </select>
+                    </label>
+
+                    <label for="övrigt">Övrigt:
+                        <textarea name="övrigt" id="övrigt" cols="30" rows="3" placeholder="Övriga kommentarer / önskningar..."></textarea>
+                    </label>
                 </fieldset>
+
                 <fieldset>
+                    <p>Are you a capybara?</p>
+                    <label>
+                        <input class="inline" type="radio" value="yes" name="capybara-yes-or-no">Yes
+                    </label>
+                    <label>
+                        <input class="inline" type="radio" value="no" name="capybara-yes-or-no">No
+                    </label>
+                    <button type="submit" id="submit">Submit</button>
                 </fieldset>
+
             </form>
         </main>
 

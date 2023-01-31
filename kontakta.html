@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotell Bright - Välkommen</title>
+    <title>Hotell Bright - Kontakta</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -33,15 +33,25 @@
         </header>
 
         <main>
-            <article class="art-1">
-                <!-- The left article -->
-                <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit rem ea dicta alias optio nihil omnis. Quam repudiandae quod quidem autem suscipit voluptates sunt optio, voluptatem atque dolores, ipsum vero.</p>
-            </article>
+            <form action="#">
+                <fieldset>
+                    <label>Namn:
+                        <input name="namn" type="text" placeholder="Förnamn Efternamn" required>
+                    </label>
+                    <label>Email:
+                        <input name="email" type="email" placeholder="exempel.mail@mail.com" required>
+                    </label>
+                    <label for="meddelande">Meddelande:
+                        <textarea name="meddelande" id="meddelande" cols="30" rows="3" placeholder="Hej jag kontaktar er angående...." required></textarea>
+                    </label>
+                    <button type="submit" id="submit">Submit</button>
+                </fieldset>
+            </form>
             <article class="art-2">
                 <!-- The right article -->
-                <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maiores saepe, ab quia enim, eveniet unde temporibus impedit minima cupiditate sapiente quasi perferendis praesentium distinctio placeat dolore numquam pariatur culpa.</p>
+                <h2>Kontakt information</h2>
+                <p>Telephone number: 012 - 12 34 56</p>
+                <p>Email: customer.service@hotell.bright.se</p>
             </article>
         </main>
 

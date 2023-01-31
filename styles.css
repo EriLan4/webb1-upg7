@@ -11,6 +11,7 @@ body{
     margin: 0 auto;
     width: 95vw;
     max-width: 1000px;
+    height: 100vh;
 }
 
 .header_img {
@@ -49,7 +50,7 @@ article, fieldset{
     flex-direction: column;
     margin: 10px auto;
     width: 90%;
-    height: 300px;
+    height: 350px;
     padding: 15px;
     background-color: #F7CACD;
     color: #000000;
@@ -77,6 +78,7 @@ footer{
     }
 }
 
+/* Hamburger menu in phone mode */
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -104,7 +106,32 @@ form{
     flex-direction: column;
     width: 100%;
     height: 100%;
-    gap: 0px;
+}
+
+fieldset{
+    justify-content: center;
+}
+
+label{
+    display: block;
+}
+
+input, textarea, select{
+    margin: 0 0 5px 10px;
+    width: 90%;
+}
+
+button{
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.inline{
+    width: unset;
+    vertical-align: middle;
 }
 
 @media(min-width: 600px){
