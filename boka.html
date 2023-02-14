@@ -7,6 +7,7 @@
     <title>Hotell Bright - Boka</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script  defer src="./menu.js"></script>
 </head>
 
 <body>
@@ -14,17 +15,17 @@
         <header>
             <!-- Images in the header -->
             <div class="header_img">
-                <img src="https://picsum.photos/200" alt="Placeholder" class="logo_img">
-                <img src="https://picsum.photos/800/200" alt="Placeholder" class="large_img">
+                <img src="./capybara-logo.webp" alt="Small image of a cartoon capybara" class="logo_img">
+                <img src="./capybara-header.webp" alt="Thin image of a Capybara in a field" class="large_img">
             </div>
 
             <!-- Navigation menu -->
             <nav>
                 <div class="topnav" id="myTopnav">
-                    <a href="index.html" class="active">Välkommen</a>
-                    <a href="boka.html">Boka</a>
-                    <a href="hitta.html">Hitta</a>
-                    <a href="kontakta.html">Kontakta</a>
+                    <a href="./index.html" class="active">Välkommen</a>
+                    <a href="./boka.html">Boka</a>
+                    <a href="./hitta.html">Hitta</a>
+                    <a href="./kontakta.html">Kontakta</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                       </a>
@@ -74,17 +75,5 @@
             <p>Hotell Bright | Storgatan 1 | 123 45 Storstad | 012 - 12 34 56</p>
         </footer>
     </div>
-    
-    <!-- Script from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-        </script>
 </body>
 </html>

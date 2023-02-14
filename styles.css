@@ -17,9 +17,10 @@ body{
 .header_img {
     display: flex;
     height: 200px;
+    overflow: hidden;
 }
 .large_img {
-    width: 80%;
+    width: 100%;
 }
 
 header nav {
@@ -45,7 +46,7 @@ a.icon {
     display: none;
 }
 
-article, fieldset{
+article, fieldset, .art {
     display: flex;
     flex-direction: column;
     margin: 10px auto;
@@ -98,6 +99,45 @@ footer{
       display: block;
       text-align: left;
     }
+}
+
+/* index - Slideshow */
+/* Code aided by https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  justify-content: center;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px 16px 16px 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
 /* Form - Boka page  */
